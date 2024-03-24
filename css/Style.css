@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+#color-box {
+  width: 400px;
+  height: 400px;
+  background-color: #f0f0f0; /* Default background color */
+  border: 1px solid #ccc;
+  cursor: pointer; /* Cursor will change to pointer when hovering over the box */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  /* Added the following lines */
+  box-sizing: border-box; /* Include border and padding in element's total width and height */
+  display: inline-block; /* Allow multiple color-boxes in a line */
+}
+
+#color-box:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+#change-color-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+#change-color-btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
